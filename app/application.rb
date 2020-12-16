@@ -1,7 +1,7 @@
 class Application
   def call(env)
     resp = Rack::Response.new
-    resp.write "Hello, World"
+    current_time = Datetime.now
     resp.finish
   end
 
